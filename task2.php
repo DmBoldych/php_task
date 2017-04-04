@@ -1,7 +1,7 @@
 <? session_start(); ?>
 <? if($_COOKIE['loggedIn']) : ?>
     <div style="text-align:center; vertical-align:middle">
-	<p>Ёбушки воробушки, <?= $_COOKIE['login']; ?></p>
+	<p>Имя, <?= $_COOKIE['login']; ?></p>
     <a href="<?= $_SERVER['PHP_SELF']; ?>?logout=true">Выйти</a>
 	</div>
 <? else : ?>
